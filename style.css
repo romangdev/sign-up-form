@@ -51,8 +51,19 @@ table {
 
 /* START OF CUSTOM CSS */
 
+@font-face {
+  font-family: norseBold;
+  src: url(fonts/Norse-Bold.otf)
+}
+
+:root {
+  --body-bg-color: rgb(17, 17, 17);
+  --main-left-font-color: white;
+  --main-right-font-color: white;
+}
+
 body {
-  background-color: rgb(17, 17, 17);
+  background-color: var(--body-bg-color)
 }
 
 .main {
@@ -68,6 +79,15 @@ body {
   width: 575px;
   background-image: url(img/leaves.jpg);
   background-size: 475px;
+  color: var(--main-left-font-color)
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: norseBold, Courier, monospace;
 }
 
 .logo img {
