@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <script src="script.js"></script>
 </head>
 <body>
@@ -34,25 +37,36 @@
           <div class="input-fields">
             <h2>Let's do this!</h2>
             <div class="name">
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" placeholder="John" name="first-name">
-    
-              <label for="last-name">FIRST NAME</label>
-              <input type="text" id="last-name" placeholder="Doe" name="last-name">
+              <div class="input-and-label">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" placeholder="John" name="first-name">
+              </div>
+              <div class="input-and-label">
+                <label for="last-name">FIRST NAME</label>
+                <input type="text" id="last-name" placeholder="Doe" name="last-name">
+              </div>
             </div>
             <div class="contact-info">
-              <label for="email">EMAIL</label>
-              <input type="email" id="email" placeholder="johndoe@gmail.com"
-                name="email">
-              <label for="phone-number">PHONE NUMBER</label>
-              <input type="tel" id="phone-number" placeholder="123 456 7890"
-                name="phone" patern="[0-9]{3} [0-9]{3} [0-9]{4}">
+              <div class="input-and-label">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="johndoe@gmail.com"
+                  name="email">
+              </div>
+              <div class="input-and-label">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" id="phone-number" placeholder="123 456 7890"
+                  name="phone" patern="[0-9]{3} [0-9]{3} [0-9]{4}">
+              </div>
             </div>
             <div class="password">
-              <label for="password">PASSWORD</label>
-              <input type="password" id="password" name="password" min="5" max="20">
-              <label for="password-confirm">CONFIRM PASSWORD</label>
-              <input type="password" id="password-confirm" name="password-confirm" min="5" max="20">
+              <div class="input-and-label">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" min="5" max="20">
+              </div>
+              <div class="input-and-label">
+                <label for="password-confirm">CONFIRM PASSWORD</label>
+                <input type="password" id="password-confirm" name="password-confirm" min="5" max="20">
+              </div>
             </div>
           </div>
           <button type="submit" class="create-acct-btn">Create Account</button>
