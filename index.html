@@ -16,15 +16,46 @@
         <p>Photo by ...</p>
       </footer>
     </div>
+
     <div class="main-right">
       <div class="sign-up-message">
-
+        <p>This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up 
+          <em>now</em> to get started. 
+        </p>
+        <p>You <em>know</em> you want to.</p>
       </div>
       <div class="sign-up-form">
-
+        <form action="#" method="get">
+          <div class="input-fields">
+            <h2>Let's do this!</h2>
+            <div class="name">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" placeholder="John" name="first-name">
+    
+              <label for="last-name">FIRST NAME</label>
+              <input type="text" id="last-name" placeholder="Doe" name="last-name">
+            </div>
+            <div class="contact-info">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" placeholder="johndoe@gmail.com"
+                name="email">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" id="phone-number" placeholder="123 456 7890"
+                name="phone" patern="[0-9]{3} [0-9]{3} [0-9]{4}">
+            </div>
+            <div class="password">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" min="5" max="20">
+              <label for="password-confirm">CONFIRM PASSWORD</label>
+              <input type="password" id="password-confirm" name="password-confirm" min="5" max="20">
+            </div>
+          </div>
+          <button type="submit" class="create-acct-btn">Create Account</button>
+        </form>
       </div>
-      <div class="login-or-create">
-
+      <div class="login">
+        <p>Already have an account? <a href="#">Login</a></p>
       </div>
     </div>
   </div>
