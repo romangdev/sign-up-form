@@ -63,6 +63,7 @@ table {
 }
 
 body {
+  font-size: 18px;
   background-color: var(--body-bg-color)
 }
 
@@ -79,7 +80,11 @@ body {
   width: 575px;
   background-image: url(img/leaves.jpg);
   background-size: 475px;
-  color: var(--main-left-font-color)
+  color: var(--main-left-font-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -88,8 +93,26 @@ body {
   justify-content: center;
   align-items: center;
   font-family: norseBold, Courier, monospace;
+  font-size: 5rem;
+  margin-top: 180px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(17, 17, 17, 0.6);
 }
 
 .logo img {
   width: 80px;
+}
+
+.logo h2 {
+  margin-top: 20px;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: var(--main-left-font-color)
 }
